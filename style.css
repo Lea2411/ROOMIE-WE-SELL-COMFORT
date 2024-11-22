@@ -1,0 +1,270 @@
+/* Import de la police Coiny pour le logo "Roomie" */
+@font-face {
+  font-family: 'Coiny';
+  src: url('/mnt/data/Coiny-Regular.ttf') format('truetype');
+}
+
+/* Fond général du site */
+body {
+  background-color: #B4B3A0;
+  color: #333;
+  font-family: 'Roboto', sans-serif; /* Police générale */
+  margin: 0;
+  padding: 0;
+}
+
+/* Application de la police Coiny uniquement pour le logo "Roomie" */
+.header .logo {
+  font-family: 'Coiny', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+/* Bandeau supérieur avec le logo et le panier */
+.header {
+  background-color: #F0E7D2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-icon img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* Texte sous le bandeau supérieur */
+.hero-text {
+  background-color: #F0E7D2;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.hero-text h2 {
+  margin: 0;
+  color: #333;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/* Boutons de navigation et boutons produits */
+.nav-buttons,
+.image-row figcaption,
+.banner-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #F0E7D2;
+}
+
+.nav-buttons button,
+.nav-button,
+.subscribe-button,
+.follow-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #F0E7D2; /* Fond beige */
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: background-color 0.3s ease;
+}
+
+.nav-buttons button:hover,
+.nav-button:hover,
+.subscribe-button:hover,
+.follow-button:hover {
+  background-color: #D8CBB5; /* Fond beige clair au survol */
+}
+
+/* Bandeau avec chaiseverte, taille réduite et pleine largeur */
+.hero-banner {
+  background-color: #AA886B;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.hero-banner img {
+  width: 25%; /* Réduction à 25% de la taille initiale */
+  display: block;
+  margin: 0 auto;
+}
+
+/* Texte centré "PRODUCTS" et "ABOUT" */
+.section-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+/* Ligne de trois images : fauteuil, sofa, tabouret */
+.image-row {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  flex-wrap: wrap;
+  background-color: #F0E7D2; /* Fond beige étendu */
+  border-radius: 8px;
+}
+
+.image-row figure {
+  position: relative;
+  width: 150px; /* Dimensions carrées */
+  height: 150px; /* Dimensions carrées */
+  text-align: center;
+  background-color: #AA886B; /* Fond marron */
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.image-row img {
+  width: 100px;
+  height: 100px; /* Hauteur pour uniformité */
+}
+
+.image-row figcaption {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Section texte et image alignés */
+.text-image-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+  background-color: #AA886B; /* Fond marron */
+}
+
+.text-image-section:nth-child(odd) {
+  background-color: #B4B3A0; /* Fond beige pour les sections alternées */
+}
+
+.text-image-section .text {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  text-align: left;
+  padding: 20px;
+  min-width: 250px;
+}
+
+.text-image-section .image {
+  flex: 1;
+}
+
+.text-image-section .image img {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #B4B3A0; /* Fond beige */
+}
+
+/* Mise à jour pour le fond vert sous salon1 et pouf */
+.text-image-section {
+  background-color: #B4B3A0; /* Fond marron changé en vert */
+}
+
+.text-image-section .text {
+  font-size: 18px; /* Texte légèrement agrandi */
+  line-height: 1.8;
+}
+
+.text-image-section .image img {
+  max-width: 400px; /* Image légèrement agrandie */
+}
+
+/* Nouveau fond vert sous "At Roomie we believe..." */
+.text-image-section:nth-child(2) .text {
+  background-color: #B4B3A0; /* Fond vert ajouté ici */
+}
+
+/* Bandeau avec l'image salon2, prenant toute la largeur */
+.banner {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.banner img {
+  width: 100%; /* L'image prend toute la largeur */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+/* Footer avec les informations de contact */
+.footer {
+  background-color: #F0E7D2;
+  text-align: center;
+  padding: 10px;
+  color: #333;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .text-image-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-image-section .text, 
+  .text-image-section .image {
+    text-align: center;
+  }
+
+  .image-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner img {
+    width: 80%; /* Ajustement de la taille pour les petits écrans */
+  }
+
+  .banner-button-container {
+    flex-direction: column;
+  }
+}
+
+/* Réduction de la taille du texte à côté des images "salon1" et "pouf" */
+.text-image-section .text {
+  font-size: 14px; /* Taille réduite pour le texte */
+  line-height: 1.5; /* Ajustement de l'interligne */
+}
+
+/* Augmenter la taille de l'image "Salon1" uniquement */
+.text-image-section .image img[src*="salon1"] {
+  max-width: 500px; /* Augmenter la taille de l'image salon1 */
+  width: 100%;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Bandeau supérieur avec le logo et le panier -->
+  <header class="header">
+    <h1 class="logo">ROOMIE</h1>
+    <div class="cart-icon">
+      <img src="images/panier.png" alt="Cart">
+    </div>
+  </header>
+
+  <!-- Texte sous le bandeau supérieur -->
+  <div class="hero-text">
+    <h2>WE SELL COMFORT</h2>
+  </div>
+
+  <!-- Section des boutons de navigation -->
+  <nav class="nav-buttons">
+    <button onclick="document.getElementById('product').scrollIntoView({behavior: 'smooth'})">Products</button>
+    <button onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">About</button>
+    <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Contact</button>
+  </nav>
+
+  <!-- Bandeau pleine largeur avec l'image "chaiseverte" (réduite de moitié) -->
+  <section class="hero-banner">
+    <img src="images/chaiseverte.png" alt="Green Chair">
+  </section>
+
+  <!-- Titre "PRODUCTS" aligné au centre de la page -->
+  <h3 id="product" class="section-title">PRODUCTS</h3>
+
+  <!-- Ligne de trois images : fauteuil, sofa, tabouret avec boutons -->
+  <section class="image-row">
+    <figure>
+      <img src="images/fauteuil.png" alt="Armchair">
+      <figcaption>
+        <button class="nav-button">Armchair</button>
+      </figcaption>
+    </figure>
+    <figure>
+      <img src="images/sofa.png" alt="Sofa">
+      <figcaption>
+        <button class="nav-button">Sofa</button>
+      </figcaption>
+    </figure>
+    <figure>
+      <img src="images/tabouret.png" alt="Stool">
+      <figcaption>
+        <button class="nav-button">Stool</button>
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- Titre "ABOUT" aligné au centre de la page -->
+  <h3 id="about" class="section-title">ABOUT</h3>
+
+  <!-- Texte et image "salon1" alignés -->
+  <section class="text-image-section">
+    <div class="text">
+      <p>At Roomie, we believe that every space deserves to be as welcoming as it is aesthetically pleasing. Since our founding in 2009, our passion for design has been expressed through a collection of meticulously crafted furniture that combines comfort, quality, and style. 
+        Whether you're searching for elegant seating, modern sofas, or unique pieces to enhance your home, we have everything you need to create the perfect living space.
+        
+      Our dedication to excellence is evident in every item we create. Roomie’s collection offers a wide range of furniture designed to cater to a variety of tastes and interior styles. Each piece is the result of thoughtful design and expert craftsmanship, using sustainable materials and artisan techniques to ensure exceptional durability and timeless appeal. Whether it's a sleek armchair, a spacious sofa, or one-of-a-kind decor elements, our furniture is built to last.
+        
+        We pride ourselves on our commitment to sustainability. Since 2012, Roomie has been working with eco-friendly materials and prioritizing responsible sourcing to minimize our environmental impact. This approach not only enhances the durability of our products but also ensures they are kind to the planet.
+        
+        At Roomie, we’re here to help you make the best choices for your home. Our team of passionate design experts is always available to assist you, guiding you through the process of curating a space that reflects your personality and lifestyle. Whether you’re revamping a single room or undertaking a full home redesign, we’re here to make your vision a reality.
+        
+        </p>
+    </div>
+    <div class="image">
+      <img src="images/salon1.png" alt="Living Room 1" class="large-image">
+    </div>
+  </section>
+
+  <!-- Nouvelle section avec image "pouf" et texte aligné à droite -->
+  <section class="text-image-section">
+    <div class="image">
+      <img src="images/pouf.png" alt="Pouf">
+    </div>
+    <div class="text">
+      <p>In 2024, Roomie launched its [new product line/flagship store], further expanding our reach and offering even more options for those looking to elevate their interiors. Our designs are continually evolving, incorporating the latest trends and timeless styles to ensure your space remains as stylish and comfortable as possible. From modern minimalist designs to more eclectic, vintage-inspired pieces, Roomie has something for every taste and every home.
+
+        Our Values:
+        
+        Sustainability: Since 2012, Roomie has partnered with eco-conscious manufacturers, ensuring that our products are built with the planet in mind. All of our materials are responsibly sourced, and we continuously seek innovative ways to reduce waste and energy consumption in production.
+        
+        Quality & Craftsmanship: Each Roomie piece is a testament to skilled craftsmanship, combining modern techniques with traditional artistry. Our furniture is made to last, providing long-lasting comfort and style for years to come.
+        
+        Customer Experience: Roomie isn’t just about furniture; it’s about creating spaces where you can truly feel at home. Our expert team is here to guide you, helping you select the right pieces that will transform your living space into a personalized sanctuary.
+        
+        Whether you're in need of sleek modern seating, a cozy sofa for relaxing, or statement pieces that reflect your unique taste, Roomie has everything you need to make your space as stylish and comfortable as you deserve.
+        
+        </p>
+    </div>
+  </section>
+
+  <!-- Bandeau avec image "salon2" restaurée en bandeau réduit -->
+  <section id="contact" class="banner">
+    <img src="images/salon2.png" alt="Living Room 2">
+  </section>
+
+  <!-- Footer avec les informations de contact -->
+  <footer class="footer">
+    <div class="footer-buttons">
+      <button class="subscribe-button">Subscribe to our Newsletter</button>
+      <button class="follow-button">Follow us</button>
+    </div>
+    <p>roomiecontact@gmail.com</p>
+    <p>03 56 83 68 25</p>
+  </footer>
+
+</body>
+</html>
